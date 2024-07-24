@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Survey</title>
+</head>
+<body>
+  <h1>Survey</h1>
+  <%= form_with url: '/surveys', method: :post do %>
+    <p>
+      <label>Can you code in Ruby?</label>
+      <%= radio_button_tag :q1, 'Yes' %> Yes
+      <%= radio_button_tag :q1, 'No' %> No
+    </p>
+    <p>
+      <label>Can you code in JavaScript?</label>
+      <%= radio_button_tag :q2, 'Yes' %> Yes
+      <%= radio_button_tag :q2, 'No' %> No
+    </p>
+    <p>
+      <label>Can you code in Swift?</label>
+      <%= radio_button_tag :q3, 'Yes' %> Yes
+      <%= radio_button_tag :q3, 'No' %> No
+    </p>
+    <p>
+      <label>Can you code in Java?</label>
+      <%= radio_button_tag :q4, 'Yes' %> Yes
+      <%= radio_button_tag :q4, 'No' %> No
+    </p>
+    <p>
+      <label>Can you code in C#?</label>
+      <%= radio_button_tag :q5, 'Yes' %> Yes
+      <%= radio_button_tag :q5, 'No' %> No
+    </p>
+    <%= submit_tag 'Submit' %>
+  <% end %>
+</body>
+</html>
