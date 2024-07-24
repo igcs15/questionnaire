@@ -32,7 +32,7 @@ gem install rails -v 6.1.7
 
    Clone the repository to your local machine:
 
-   git clone <repository_url>
+   git clone [<repository_url>](https://github.com/igcs15/questionnaire.git)
 
 2. **Navigate to the Project Directory**
 
